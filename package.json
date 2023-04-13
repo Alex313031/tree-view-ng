@@ -1,6 +1,6 @@
 {
   "name": "tree-view",
-  "version": "0.229.3",
+  "version": "0.229.4",
   "main": "./lib/main",
   "description": "Explore and open files in the current Atom-ng project.",
   "repository": "https://github.com/Alex313031/tree-view-ng",
@@ -8,7 +8,7 @@
   "engines": {
     "atom": "*"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "fs-plus": "^3.1.1",
     "minimatch": "3.0.3",
@@ -73,32 +73,38 @@
     "hideIgnoredNames": {
       "type": "boolean",
       "default": false,
+      "title": "Hide core config ignored files",
       "description": "Don't show items matched by the `Ignored Names` core config setting."
     },
     "sortFoldersBeforeFiles": {
       "type": "boolean",
       "default": true,
+      "title": "Sort folders before files",
       "description": "When listing directory items, list subdirectories before listing files."
     },
     "autoReveal": {
       "type": "boolean",
       "default": false,
+      "title": "Auto reveal tree view entries when active",
       "description": "Reveal tree view entries when they become the active pane item."
     },
     "focusOnReveal": {
       "type": "boolean",
       "default": true,
+      "title": "Focus the tree view when revealing entries",
       "description": "Focus the tree view when revealing entries."
     },
     "alwaysOpenExisting": {
       "type": "boolean",
       "default": false,
+      "title": "Always focus existing view of a file",
       "description": "When opening a file, always focus an already-existing view of the file even if it's in another pane."
     },
     "hiddenOnStartup": {
       "type": "boolean",
       "default": false,
-      "description": "When Atom is opened, the view is hidden."
+      "title": "Hide tree view on startup",
+      "description": "When Atom-ng is opened, the view is hidden."
     }
   }
 }

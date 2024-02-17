@@ -1,6 +1,6 @@
 '.platform-darwin':
+  'cmd-\\': 'tree-view:toggle'
   'alt-t': 'tree-view:toggle'
-  'ctrl-\\': 'tree-view:toggle'
   'cmd-|': 'tree-view:reveal-active-file'
   'ctrl-0': 'tree-view:toggle-focus'
 
